@@ -9,7 +9,20 @@ module.exports = {}
   },
   "dependencies": {
 "use client";
-import React, { useState } from "react";
+import React, { useState } from "react";export const metadata = {
+  title: "Mario Puddunan Portfolio",
+  description: "Licensed Civil Engineer | Project Coordinator | Designer",
+};
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <body style={{ margin: 0, padding: 0, fontFamily: "Arial, sans-serif" }}>
+        {children}
+      </body>
+    </html>
+  );
+}
 import { Moon, Sun, X } from "lucide-react";
 
 export default function Page() {
